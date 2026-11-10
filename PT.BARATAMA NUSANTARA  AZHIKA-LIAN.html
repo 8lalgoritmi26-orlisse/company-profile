@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PT Baratama Nusantara - Solusi Kualitas Batu Bara Terbaik</title>
+    <style>
+        /* CSS Reset & Styling Dasar */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+            scroll-behavior: smooth;
+        }
+
+        /* Header & Navigasi */
+        header {
+            background: #1a252c;
+            color: #fff;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #f39c12;
+            letter-spacing: 1px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #f39c12;
+        }
+
+        /* Bagian Hero / Banner Utama */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1578328819058-b69f3a3b0f6b?auto=format&fit=crop&w=1200&q=80') no-repeat center center/cover;
+            color: #fff;
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: #f39c12;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 30px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #f39c12;
+            color: #fff;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background: #d68910;
+        }
+
+        /* Container Umum */
+        .container {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            margin-bottom: 40px;
+            color: #1a252c;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            width: 60px;
+            height: 4px;
+            background: #f39c12;
+            display: block;
+            margin: 10px auto 0;
+            border-radius: 2px;
+        }
+
+        /* Tentang Kami */
+        .about-content {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .about-text {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            height: 300px;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        /* Visi & Misi */
+        .vision-mission {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+
+        .vm-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-left: 5px solid #f39c12;
+        }
+
+        .vm-card h3 {
+            margin-bottom: 15px;
+            color: #1a252c;
+            font-size: 1.4rem;
+        }
+
+        .vm-card ul {
+            padding-left: 20px;
+        }
+
+        .vm-card ul li {
+            margin-bottom: 8px;
+        }
+
+        /* Produk Batu Bara */
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .product-card {
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+            border-top: 4px solid #127bf3;
+            transition: transform 0.3s;
+        }
+
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .product-card h3 {
+            margin-bottom: 15px;
+            color: #1a252c;
+        }
+
+        .product-card p {
+            margin-bottom: 8px;
+        }
+
+        /* Kontak */
+        .contact {
+            background: #1a252c;
+            color: #fff;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .contact p {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header & Navigasi -->
+    <header>
+        <div class="logo">PT BARATAMA NUSANTARA</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Beranda</a></li>
+                <li><a href="#about">Tentang Kami</a></li>
+                <li><a href="#products">Produk</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1>PT Baratama Nusantara</h1>
+        <p>Mitra Terpercaya Penyedia Produk Batu Bara Berkualitas Tinggi untuk Kebutuhan Industri Nasional dan Internasional.</p>
+        <a href="#contact" class="btn">Hubungi Kami</a>
+    </section>
+
+    <!-- Tentang Kami -->
+    <section id="about" class="container">
+        <h2>Tentang Perusahaan</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p><strong>PT Baratama Nusantara</strong> adalah perusahaan terkemuka yang bergerak di bidang perdagangan dan distribusi batu bara. Kami berkomitmen untuk menyediakan pasokan batu bara berkualitas tinggi yang konsisten guna memenuhi kebutuhan energi sektor industri, pembangkit listrik, serta pabrik-pabrik manufaktur.</p>
+                <br>
+                <p>Dengan jaringan logistik yang kuat dan standar kontrol kualitas yang ketat, kami siap menjadi solusi energi andalan bagi kelangsungan bisnis Anda.</p>
+            </div>
+            <div class="about-image">
+                <!-- Gambar Tambang / Alat Berat Terbuka -->
+                <img src=https://www.google.com/imgres?q=gambar%20batubara&imgurl=https%3A%2F%2Fwww.goldenenergymines.com%2Fwp-content%2Fuploads%2F2025%2F10%2FJenis-Tambang-Batubara-scaled.png&imgrefurl=https%3A%2F%2Fwww.goldenenergymines.com%2Fid%2F2025%2F10%2F16%2Fjenis-tambang-batubara-metode-dan-praktik-di-golden-energy-mines%2F&docid=1czOC_q4l3l3BM&tbnid=sfoy76YqBo0isM&vet=12ahUKEwj5zoCGkOiXAxVgjOEIHTUTJZ8QnPAOegUI5wQQAA..i&w=2560&h=1426&hcb=2&ved=2ahUKEwj5zoCGkOiXAxVgjOEIHTUTJZ8QnPAOegUI5wQQAA alt="Aktivitas Tambang Batu Bara">
+            </div>
+        </div>
+
+        <!-- Visi & Misi -->
+        <div class="vision-mission">
+            <div class="vm-card">
+                <h3>Visi</h3>
+                <p>Menjadi perusahaan penyedia dan distributor batu bara terkemuka yang terpercaya, handal, dan berstandar global dalam mendukung ketahanan energi nasional serta internasional.</p>
+            </div>
+            <div class="vm-card">
+                <h3>Misi</h3>
+                <ul>
+                    <li>Menyediakan produk batu bara berkualitas tinggi yang konsisten sesuai dengan kebutuhan spesifik pelanggan industri.</li>
+                    <li>Membangun rantai pasok dan jaringan logistik yang efisien, aman, dan tepat waktu.</li>
+                    <li>Mengutamakan kepuasan pelanggan melalui pelayanan profesional serta standar operasional yang beretika.</li>
+                    <li>Menjalankan bisnis yang berkelanjutan dengan memperhatikan prinsip tata kelola perusahaan yang baik.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Batu Bara -->
+    <section id="products" style="background-color: #eee;">
+        <div class="container">
+            <h2>Produk & Spesifikasi</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <h3>High-Calorie Coal (Kalori Tinggi)</h3>
+                    <p><strong>Kalori:</strong> > 6.100 kcal/kg (GAR)</p>
+                    <p>Cocok untuk kebutuhan industri berat dan pembangkit listrik dengan efisiensi pembakaran maksimal.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Medium-Calorie Coal (Kalori Menengah)</h3>
+                    <p><strong>Kalori:</strong> 5.000 - 5.800 kcal/kg (GAR)</p>
+                    <p>Pilihan optimal untuk berbagai pabrik manufaktur, semen, dan industri tekstil dengan keseimbangan harga dan performa.</p>
+                </div>
+                <div class="product-card">
+                    <h3>Low-Calorie Coal (Kalori Rendah)</h3>
+                    <p><strong>Kalori:</strong> 4.000 - 4.800 kcal/kg (GAR)</p>
+                    <p>Solusi ekonomis dengan kandungan sulfur rendah untuk berbagai aplikasi boiler skala menengah.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="contact">
+        <h2>Hubungi Kami</h2>
+        <p>Tertarik untuk bekerja sama atau ingin menanyakan ketersediaan stok dan harga?</p>
+        <p style="margin-top: 20px;"><strong>Email:</strong> info@baratamanusantara.co.id</p>
+        <p><strong>Telepon:</strong> +62 82345000002</p>
+        <p><strong>Alamat:</strong> Jl. Jaya Makmur No. 123, Jakarta, Indonesia</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 PT Baratama Nusantara. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+    </footer>
+
+</body>
+</html>
